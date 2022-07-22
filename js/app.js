@@ -25,18 +25,18 @@ console.log(grigliaElement)
 for (let i = 0; i < 100; i++){
     
     if (((i + 1) % 15) === 0) {
-        grigliaElement.innerHTML += `<div>FizzBuzz</div>`
+        grigliaElement.innerHTML += `<div class="cella">FizzBuzz</div>`
     } else {
         // ma che per i multipli di 3 stampi “Fizz” al posto del numero
 
         if (((i + 1) % 3) === 0) {
-            grigliaElement.innerHTML += `<div>Fizz</div>`
+            grigliaElement.innerHTML += `<div class="cella">Fizz</div>`
         } else {
             // e per i multipli di 5 stampi “Buzz”.
             if (((i + 1) % 5) === 0) {
-                grigliaElement.innerHTML += `<div>Buzz</div>`
+                grigliaElement.innerHTML += `<div class="cella">Buzz</div>`
             } else {
-                grigliaElement.innerHTML += `<div>${i+1}</div>`
+                grigliaElement.innerHTML += `<div class="cella">${i+1}</div>`
             }
         }
     }
