@@ -20,4 +20,8 @@ for (let i = 0; i < 100; i++) {
     }
 }
 // BONUS
-
+const grigliaElement = document.querySelector('.griglia')
+console.log(grigliaElement)
+for (let i = 0; i < 100; i++){
+    grigliaElement.innerHTML += `<div>${i+1}</div>`
+}
