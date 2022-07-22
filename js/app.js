@@ -24,4 +24,20 @@ const grigliaElement = document.querySelector('.griglia')
 console.log(grigliaElement)
 for (let i = 0; i < 100; i++){
     grigliaElement.innerHTML += `<div>${i+1}</div>`
+    if (((i + 1) % 15) === 0) {
+        grigliaElement.innerHTML += `<div>FizzBuzz</div>`
+    } else {
+        // ma che per i multipli di 3 stampi “Fizz” al posto del numero
+
+        if (((i + 1) % 3) === 0) {
+            console.log('Fizz')
+        } else {
+            // e per i multipli di 5 stampi “Buzz”.
+            if (((i + 1) % 5) === 0) {
+                console.log('Buzz')
+            } else {
+                console.log(i+1)
+            }
+        }
+    }
 }
